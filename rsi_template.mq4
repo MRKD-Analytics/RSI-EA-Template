@@ -82,6 +82,7 @@ void        CRSITrade::Stage() {
    if (DeadlineReached()) {
       ClosePositions(ORDER_TYPE_BUY);
       ClosePositions(ORDER_TYPE_SELL); 
+      return; 
    }
    
 
